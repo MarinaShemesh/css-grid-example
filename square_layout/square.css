@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+        "top_text top_pic"
+        /*write 2 things because there are 2 columns */
+        "bottom_pic bottom_text";
+        
+
+  }
+
+
+.top_text {
+    background-color: black;
+    grid-area: top_text;
+}
+
+.top_pic {
+    background-image: url("cactus_1.jpeg");
+    grid-area: top_pic;
+    min-height: 300px;
+    
+}
+
+.bottom_pic {
+    background-image: url("cactus_2.jpeg");
+    background-repeat:round;
+    grid-area: bottom_pic;
+    min-height: 300px;
+
+}
+
+
+.bottom_text {
+    background-color: black;
+    grid-area: bottom_text;
+}
