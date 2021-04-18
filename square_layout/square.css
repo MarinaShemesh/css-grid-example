@@ -6,38 +6,47 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   grid-template-areas:
         "top_text top_pic"
         /*write 2 things because there are 2 columns */
         "bottom_pic bottom_text";
-        
-
-  }
+     }
 
 
 .top_text {
     background-color: black;
+    color:white;
     grid-area: top_text;
+    min-height: 325px;
+  }
+
+p {
+    padding:70px 100px 0px 100px;
+    font-family: Tahoma, sans-serif;
+    font-size: 17px;
+   
 }
 
 .top_pic {
-    background-image: url("cactus_1.jpeg");
     grid-area: top_pic;
-    min-height: 300px;
+    background-image: url("cactus_1.jpeg");
+    background-size: cover;
     
 }
 
 .bottom_pic {
-    background-image: url("cactus_2.jpeg");
-    background-repeat:round;
     grid-area: bottom_pic;
-    min-height: 300px;
-
-}
+    background-image: url("cactus_3.jpeg");
+    background-size: cover;
+    
+    }
 
 
 .bottom_text {
-    background-color: black;
     grid-area: bottom_text;
+    background-color: black;
+    color:white;
+    min-height: 300px;
+
 }
