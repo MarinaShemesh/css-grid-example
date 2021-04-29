@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas:
+              write 2 things because there are 2 columns 
+        "header header header"
+        "sidebar sidebar"
+        "content content"
+        "footer footer";
+    
+
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-areas:
+                    /*write four things because there are 4 columns */
+        " header header header header"
+        " nav_bar nav_bar nav_bar nav_bar"
+        ". content content ."
+        ". footer footer .";
+   
+}
+
+
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.nav_bar {
+    grid-area: nav_bar;
+    background-color: grey;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: blueviolet;
+    justify-self: center;
+}
+
+.content {
+   grid-area: content;
+   background-color: pink;
+  
+   /* display: grid;
+   grid-template-columns: 1fr;
+    */
+   /* grid-template-areas: 
+   "article"
+   "article"
+   "article"; */
+
+}
+
+
+.article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "photo_1 text_1"
+    "photo_2 text_2"
+    "photo_3 text_3";
+    grid-gap: 5px;
+    
+ 
+}
+
+ .photo_1{
+   grid-area: photo_1;
+    background-color: azure;
+}
+
+.photo_2{
+    grid-area: photo_2;
+     background-color: azure;
+ }
+
+ .photo_3{
+    grid-area: photo_3;
+     background-color: azure;
+ }
+ 
+.text_1{
+    grid-area: text_1;
+    background-color: yellow;
+}
+
+.text_2{
+    grid-area: text_2;
+    background-color: yellow;
+}
+
+.text_3{
+    grid-area: text_3;
+    background-color: yellow;
+}
+
+
+
+
+/* @media screen and (min-width: 736px) { */
+
+ 
